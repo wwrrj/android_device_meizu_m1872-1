@@ -9,14 +9,14 @@ $(call inherit-product, vendor/meizu/m1872/m1872-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-mokee
+    $(LOCAL_PATH)/overlay-lineage
 
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    vendor/mokee/config/permissions/vendor.mokee.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.mokee.biometrics.fingerprint.inscreen.xml
+    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
@@ -32,7 +32,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    vendor.mokee.biometrics.fingerprint.inscreen@1.0-service.m1872
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.m1872
 
 # Init
 PRODUCT_COPY_FILES += \
@@ -48,7 +48,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.mokee.livedisplay@2.0-service.m1872
+    vendor.lineage.livedisplay@2.0-service.m1872
 
 # Parts
 PRODUCT_PACKAGES += \
@@ -60,3 +60,7 @@ PRODUCT_PACKAGES += \
 
 # Inherit from sdm710-common
 $(call inherit-product, device/meizu/sdm710-common/common.mk)
+
+#crDroid Specific
+TARGET_HAS_FOD := true
+EXTRA_FOD_ANIMATIONS := true

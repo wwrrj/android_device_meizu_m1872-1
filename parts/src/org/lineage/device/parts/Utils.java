@@ -5,14 +5,14 @@
  *
  */
 
-package org.mokee.device.parts;
+package org.lineageos.device.parts;
 
 import android.content.Context;
 import android.provider.Settings;
 
 import com.android.internal.R;
 
-import org.mokee.internal.util.FileUtils;
+import org.lineageos.internal.util.FileUtils;
 
 class Utils {
 

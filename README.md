@@ -1,4 +1,4 @@
-Copyright (C) 2020 - The MoKee Open Source Project
+
 
 Device configuration for Meizu 16 X
 ==============

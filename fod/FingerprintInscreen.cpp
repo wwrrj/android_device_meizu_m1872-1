@@ -34,7 +34,7 @@
 #define KEY_FOD 0x0272
 
 namespace vendor {
-namespace mokee {
+namespace lineage {
 namespace biometrics {
 namespace fingerprint {
 namespace inscreen {
@@ -199,5 +199,5 @@ void FingerprintInscreen::notifyKeyEvent(int value) {
 }  // namespace inscreen
 }  // namespace fingerprint
 }  // namespace biometrics
-}  // namespace mokee
+}  // namespace lineage
 }  // namespace vendor
