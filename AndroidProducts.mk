@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_m1872.mk
+    $(LOCAL_DIR)/havoc_m1872.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_m1872-userdebug
+    havoc_m1872-userdebug

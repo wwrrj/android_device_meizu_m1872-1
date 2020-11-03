@@ -28,7 +28,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.mk.maintainer=TDADS
 
-PRODUCT_NAME := lineage_m1872
+PRODUCT_NAME := havoc_m1872
 PRODUCT_BRAND := Meizu
 PRODUCT_DEVICE := m1872
 PRODUCT_MANUFACTURER := Meizu
